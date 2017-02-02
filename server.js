@@ -21,9 +21,15 @@ app.set('view engine', 'pug');
 //Allow everything in ./public to be public.
 app.use(express.static('./public'));
 
+//Load the controllers.
+const SplashController = require('./controllers/splash');
+
+
 app.get('/', (req, res) => {
     res.send('Hello world!');
 });
+
+app.get('/splash', SplashController.splash);
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);

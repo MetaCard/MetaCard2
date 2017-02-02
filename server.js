@@ -25,11 +25,14 @@ app.use(express.static('./public'));
 const SplashController = require('./controllers/splash');
 
 
-app.get('/', (req, res) => {
-    res.send('Hello world!');
-});
+/*app.get('/', (req, res) => {
+    res.send('Welcome to MetaCard!');
+});*/
 
 app.get('/splash', SplashController.splash);
+
+//Send to splash whenever page not specified @Sean
+app.get('/', SplashController.splash);
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);

@@ -6,6 +6,7 @@
     "rules": {
         "prefer-const": "error",
         "no-const-assign": "error",
+        "no-var": "error",
         "no-new-object": "error",
         "object-shorthand": "error",
         "no-array-constructor": "error",

@@ -26,7 +26,6 @@ header {
 }
 
 .navbar-right {
-    margin-right: 1rem;
     display: flex;
     flex-direction: row;
     align-content: center;

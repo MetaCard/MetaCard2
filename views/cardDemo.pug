@@ -1,18 +1,9 @@
-mixin card(title, content)
-    div(class='card')
-        h2= title
-        hr
-        p= content
-
-mixin cardList(...cards)
-    div(class='cardList')
-        each card in cards
-            +card(card.title, card.content)
-
+include ./mixins/card.pug
+include ./mixins/cardList.pug
 html
     head
-        title Card Demo
-        link(href='css/main.css' rel='stylesheet')
+        title cardDemo
+        include ./includes/head.pug
     body
         +cardList(
             {title: 'Hello1', content: '1'},
@@ -21,3 +12,4 @@ html
             {title: 'Hello4', content: '4'},
             {title: 'Hello5', content: '5'}
             )
+        include ./includes/footer.pug

@@ -1,0 +1,4 @@
+mixin cardList(...cards)
+    .cardList
+        each card in cards
+            +card(card.title, card.content)

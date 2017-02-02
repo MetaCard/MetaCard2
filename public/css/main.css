@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
 .card {
     background-color: rgba(255, 255, 255, 0.80);
     border-radius: 3px;
@@ -36,4 +42,14 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: gray;
+    text-align: center;
 }

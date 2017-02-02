@@ -1,9 +1,10 @@
 include ./mixins/card.pug
 include ./mixins/cardList.pug
+include ./includes/header.pug
+doctype html
 html
     head
         title cardDemo
-        include ./includes/head.pug
     body
         +cardList(
             {title: 'Hello1', content: '1'},

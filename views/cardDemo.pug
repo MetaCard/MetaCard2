@@ -1,0 +1,23 @@
+mixin card(title, content)
+    div(class='card')
+        h2= title
+        hr
+        p= content
+
+mixin cardList(...cards)
+    div(class='cardList')
+        each card in cards
+            +card(card.title, card.content)
+
+html
+    head
+        title Card Demo
+        link(href='css/main.css' rel='stylesheet')
+    body
+        +cardList(
+            {title: 'Hello1', content: '1'},
+            {title: 'Hello2', content: '2'},
+            {title: 'Hello3', content: '3'},
+            {title: 'Hello4', content: '4'},
+            {title: 'Hello5', content: '5'}
+            )

@@ -23,13 +23,14 @@ app.use(express.static('./public'));
 
 //Load the controllers.
 const SplashController = require('./controllers/splash');
-
+const TestController = require('./controllers/tests');
 
 app.get('/', (req, res) => {
     res.send('Hello world!');
 });
 
 app.get('/splash', SplashController.splash);
+app.get('/cardDemo', TestController.cardDemo);
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);

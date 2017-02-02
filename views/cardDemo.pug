@@ -1,16 +1,10 @@
-include ./mixins/card.pug
-include ./mixins/cardList.pug
-include ./includes/header.pug
-doctype html
-html
-    head
-        title cardDemo
-    body
-        +cardList(
+extends layout
+
+block content
+    +cardList(
             {title: 'Hello1', content: '1'},
             {title: 'Hello2', content: '2'},
             {title: 'Hello3', content: '3'},
             {title: 'Hello4', content: '4'},
             {title: 'Hello5', content: '5'}
             )
-        include ./includes/footer.pug

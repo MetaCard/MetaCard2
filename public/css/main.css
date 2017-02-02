@@ -1,33 +1,78 @@
+@charset "UTF-8";
+
 body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
 }
 
+header {
+    position: relative;
+    width: 100%;
+    padding: 1.1rem 0.625rem 1.1rem 0.625rem;
+}
+
+.logo-container {
+    position: absolute;
+    left: 1rem;
+}
+
+.navbar-right {
+    position: absolute;
+    right: 1rem;
+}
+
+.navbar-logo-text {
+    font-size: 1.5rem;
+    padding: 0;
+}
+
+.navbar-right-text{
+    font-size: 1.1rem;
+    text-decoration: none;
+    margin-right: 1rem;
+    padding: 0;
+    display: inline;
+}
+
+footer {
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    padding: 1rem;
+    text-align: center;
+    font-size: .75rem;
+}
+
+.footer-text {
+    font-size: 1.1rem;
+}
+
 .card {
     background-color: rgba(255, 255, 255, 0.80);
     border-radius: 3px;
-    box-shadow: 0.5em 0.5em 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0.5rem 0.5rem 2px rgba(0, 0, 0, 0.12);
     margin: 12px;
     padding: 14px;
-    width: 20em;
+    width: 20rem;
 }
 
 .card:active {
-    box-shadow: 0.25em 0.25em 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0.25rem 0.25rem 2px rgba(0, 0, 0, 0.12);
 }
 
 .card h2 {
     text-align: center;
     margin: 0;
-    padding: 0.5em;
+    padding: 0.5rem;
 }
 
 .card hr {
     border-style: solid;
     border-width: 1px;
     color: gray;
-    margin: 0.25em;
+    margin: 0.25rem;
     padding: 0;
 }
 
@@ -42,14 +87,4 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-}
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    background-color: gray;
-    text-align: center;
 }

@@ -8,7 +8,6 @@ app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
     res.send('Hello world!');
-    res.end();
 });
 
 app.listen(port, () => {

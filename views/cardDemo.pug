@@ -1,0 +1,15 @@
+include ./mixins/card.pug
+include ./mixins/cardList.pug
+html
+    head
+        title cardDemo
+        include ./includes/head.pug
+    body
+        +cardList(
+            {title: 'Hello1', content: '1'},
+            {title: 'Hello2', content: '2'},
+            {title: 'Hello3', content: '3'},
+            {title: 'Hello4', content: '4'},
+            {title: 'Hello5', content: '5'}
+            )
+        include ./includes/footer.pug

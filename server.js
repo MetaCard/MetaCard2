@@ -23,13 +23,14 @@ app.use(express.static('./public'));
 
 //Load the controllers.
 const SplashController = require('./controllers/splash');
-
+const TestController = require('./controllers/tests');
 
 /*app.get('/', (req, res) => {
     res.send('Welcome to MetaCard!');
 });*/
 
 app.get('/splash', SplashController.splash);
+app.get('/cardDemo', TestController.cardDemo);
 
 //Send to splash whenever page not specified @Sean
 app.get('/', SplashController.splash);

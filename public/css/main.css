@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.80);
+    border-radius: 3px;
+    box-shadow: 0.5em 0.5em 2px rgba(0, 0, 0, 0.12);
+    margin: 12px;
+    padding: 14px;
+    width: 20em;
+}
+
+.card:active {
+    box-shadow: 0.25em 0.25em 2px rgba(0, 0, 0, 0.12);
+}
+
+.card h2 {
+    text-align: center;
+    margin: 0;
+    padding: 0.5em;
+}
+
+.card hr {
+    border-style: solid;
+    border-width: 1px;
+    color: gray;
+    margin: 0.25em;
+    padding: 0;
+}
+
+.card p {
+    text-align: left;
+}
+
+.cardList {
+    background-color: gray;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+}

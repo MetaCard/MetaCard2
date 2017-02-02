@@ -1,7 +1,18 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+const dotenv = require('dotenv');
+
+//Start express
 const app = express();
 
-const port = 3000;
+//Load .env to the process.env object
+dotenv.load();
+
+//Load json bodies into the req object.
+app.use(bodyParser.json());
+
+//Set the port to the server's requested port, or 3000 as default.
+const port = process.env.PORT || 3000;
 
 //Enable pug as a template engine, from the views folder.
 app.set('views', './views');

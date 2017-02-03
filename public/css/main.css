@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/*
+*   
+*    $default-color-one:   #b5b9bd; (grey)
+*    $default-color-two:   #595959; (dark grey)
+*    $default-color-three: #4abdac; (teal)
+*
+*
+*/
 
 body {
     display: flex;
@@ -8,6 +16,15 @@ body {
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+}
+
+a {
+    color: #b5b9bd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #595959;
 }
 
 header {
